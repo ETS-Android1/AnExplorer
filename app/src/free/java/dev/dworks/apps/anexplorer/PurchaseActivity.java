@@ -44,6 +44,11 @@ public class PurchaseActivity extends ActionBarActivity {
         DocumentsApplication.getInstance().initializeBilling();
     }
 
+    public void clickAlert(View view){
+        Intent intent = new Intent(PurchaseActivity.this,AboutActivity.class);;
+        startActivity(intent);
+    }
+
     private void initControls() {
 
         Button restoreButton = (Button) findViewById(R.id.restore_button);

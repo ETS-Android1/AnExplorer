@@ -19,6 +19,7 @@ package dev.dworks.apps.anexplorer;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.widget.Toolbar;
@@ -38,7 +39,6 @@ import static dev.dworks.apps.anexplorer.misc.Utils.openPlaystore;
 public class AboutActivity extends AboutVariantFlavour implements View.OnClickListener {
 
 	public static final String TAG = "About";
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -65,7 +65,9 @@ public class AboutActivity extends AboutVariantFlavour implements View.OnClickLi
 		}
 		initAd();
 		initControls();
+
 	}
+
 
 	@Override
 	public String getTag() {
@@ -150,6 +152,9 @@ public class AboutActivity extends AboutVariantFlavour implements View.OnClickLi
 				break;
 		}
 	}
+
+
+
 
 	public void setUpDefaultStatusBar() {
 		int color = Utils.getStatusBarColor(SettingsActivity.getPrimaryColor());

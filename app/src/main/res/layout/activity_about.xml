@@ -48,31 +48,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingEnd="16dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
                 android:paddingStart="16dp"
+                android:paddingLeft="16dp"
+                android:paddingEnd="16dp"
+                android:paddingRight="16dp"
                 app:divider="@drawable/line_divider"
                 app:showDividers="middle|end">
-
-                <dev.dworks.apps.anexplorer.ui.CompatTextView
-                    android:id="@+id/action_rate"
-                    style="@style/ButtonAppTheme"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:adjustViewBounds="true"
-                    android:drawablePadding="16dp"
-                    android:ellipsize="end"
-                    android:gravity="start|center_vertical"
-                    android:minHeight="?attr/actionBarSize"
-                    android:padding="16dp"
-                    android:text="Rate us on Play store"
-                    android:textAlignment="viewStart"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                    android:textColor="?android:attr/textColorPrimary"
-                    android:visibility="visible"
-                    app:drawableStart="@drawable/ic_star" />
 
                 <dev.dworks.apps.anexplorer.ui.CompatTextView
                     android:id="@+id/action_support"
@@ -89,9 +70,29 @@
                     android:text="Show us more love"
                     android:textAlignment="viewStart"
                     android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                    android:textColor="?android:attr/textColorPrimary"
+                    android:textColor="?android:attr/textColorLinkInverse"
                     android:visibility="visible"
                     app:drawableStart="@drawable/ic_support" />
+
+                <dev.dworks.apps.anexplorer.ui.CompatTextView
+                    android:id="@+id/action_rate"
+                    style="@style/ButtonAppTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:adjustViewBounds="true"
+                    android:drawablePadding="16dp"
+                    android:ellipsize="end"
+                    android:gravity="start|center_vertical"
+                    android:minHeight="?attr/actionBarSize"
+                    android:padding="16dp"
+                    android:rotationX="0"
+                    android:text="Rate us on Play store（0）"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:visibility="visible"
+                    app:drawableStart="@drawable/ic_star" />
 
                 <dev.dworks.apps.anexplorer.ui.CompatTextView
                     android:id="@+id/action_sponsor"
